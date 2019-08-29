@@ -1,0 +1,60 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- calculator.html                                    :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: esantaca <marvin@42.fr>                    +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2019/08/29 15:19:44 by esantaca          #+#    #+#            -->
+<!-- Updated: 2019/08/29 15:21:13 by esantaca         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+
+<div class="container-fluid app-container">
+  <h3 class="text-secondary text-center">Calculator</h3>
+  <div class="row align-items-center">
+    
+    <div class="col-md-4" id="left-margin">
+      <h4>#left-margin</h4>
+      <div class="well" id="left-visualisation">
+      </div>
+    </div>
+    
+    <div class="col-md-4" id="calculator">
+      <h4>#calculator</h4>
+      <div class="well" id="calculator-visualisation">
+        <div class="calculator-container" id="background-calculator">
+          <div class="display" id="formula">formula</div>
+          <div class="display" id="output">output</div>
+          <button class="btn btn-default target" id="zero">0</button>
+          <button class="btn btn-default target" id="one">1</button>
+          <button class="btn btn-default target" id="two">2</button>
+          <button class="btn btn-default target" id="three">3</button>
+          <button class="btn btn-default target" id="four">4</button>
+          <button class="btn btn-default target" id="five">5</button>
+          <button class="btn btn-default target" id="six">6</button>
+          <button class="btn btn-default target" id="seven">7</button>
+          <button class="btn btn-default target" id="eight">8</button>
+          <button class="btn btn-default target" id="nine">9</button>
+          <button class="btn btn-default target" id="equal">=</button>
+          <button class="btn btn-default target" id="plus">+</button>
+          <button class="btn btn-default target" id="dot">.</button>
+          <button class="btn btn-default target" id="minus">-</button>
+          <button class="btn btn-default target" id="mult">x</button>
+          <button class="btn btn-default target" id="divide">/</button>
+          <button class="btn btn-default target" id="AC">AC</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4" id="right-margin">
+      <h4>#right-margin</h4>
+      <div class="well" id="right-visualisation">
+      </div>
+    </div>
+  </div>
+</div>

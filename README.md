@@ -1,8 +1,7 @@
 # Wildcard
 A basic calculator implemented in Javascript.
 
-## Purpose and use of the program : include screenshot
-![how to use the calculator] (link of the gif)
+![how to use the calculator](calculator.gif)
 
 ## User Interaction
 The program takes a string with an arithmetic expression as an argument, evaluates it and returns the result when the user clicks on the equal button.

@@ -15,10 +15,11 @@ body{
     background: linear-gradient(to right, #1abc9c, #27ae60);
     height: 100%;
   }
-  
+
   .calculator-container {
     background:#2c3e50;
     margin: 0 auto;
+    margin-top: 100px;
     border-color: #2c3e50;
     border-width: 3px;
     border-style: solid;

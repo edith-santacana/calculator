@@ -7,137 +7,134 @@ body{
 }
 
 .title{
-    font-family: monospace;
-    font-size: 40px;
-  }
+  font-family: monospace;
+  font-size: 40px;
+}
   
-  .app-container {
-    background: linear-gradient(to right, #1abc9c, #27ae60);
-    height: 100%;
-  }
+.app-container {
+  background: linear-gradient(to right, #1abc9c, #27ae60);
+  height: 100%;
+}
 
-  .calculator-container {
-    background:#2c3e50;
-    margin: 0 auto;
-    margin-top: 100px;
-    border-color: #2c3e50;
-    border-width: 3px;
-    border-style: solid;
-    font-size: 20px;
-    width: 300px;
-    height: 420px;;
-    display: grid;
-  /*   justify-content: center; */
-  /*   align-content: center; */
-    grid-template-rows: repeat(7, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:  
-        "formula formula formula formula"
-        "output output output output"
-        "AC AC divide mult"
-        "seven eight nine minus"
-        "four five six plus"
-        "one two three equal"
-        "zero zero dot equal";
-    
-  }
+.calculator-container {
+  background:#2c3e50;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-color: #2c3e50;
+  border-width: 3px;
+  border-style: solid;
+  font-size: 20px;
+  width: 300px;
+  height: 420px;;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:  
+    "formula formula formula formula"
+    "output output output output"
+    "AC AC divide mult"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zero zero dot equal";
+}
   
-  .display{
-    color: white;
-    background: #34495e;
-    text-align: right;
-    padding-right: 7px;
-    padding-top: 15px;
-    font-family: monospace;
-    height: 65px;
-  }
+.display{
+  color: white;
+  background: #34495e;
+  text-align: right;
+  padding-right: 7px;
+  padding-top: 15px;
+  font-family: monospace;
+  height: 65px;
+}
   
-  #formula{
-    grid-area: formula;
-  }
+#formula{
+  grid-area: formula;
+}
   
-  #output{
-    grid-area: output;
-  }
+#output{
+  grid-area: output;
+}
   
-  #AC{
-    grid-area: AC;
-    font-size: 17px;
-  }
+#AC{
+  grid-area: AC;
+  font-size: 17px;
+}
   
-  #sign{
-    grid-area: sign;
-    background: #aaa69d;
-    color: white;
-    font-size: 17px;
-  }
+#sign{
+  grid-area: sign;
+  background: #aaa69d;
+  color: white;
+  font-size: 17px;
+}
   
-  #sign:hover{
-    background: #84817a;
-    color: white;
-  }
+#sign:hover{
+  background: #84817a;
+  color: white;
+}
   
-  #divide{
-    grid-area: divide;
-    background: #aaa69d;
-    color: white;
-    font-size: 17px;
-  }
+#divide{
+   grid-area: divide;
+   background: #aaa69d;
+   color: white;
+   font-size: 17px;
+}
   
-  #divide:hover{
-    background: #84817a;
-    color: white;
-  }
+#divide:hover{
+  background: #84817a;
+  color: white;
+}
   
-  #mult{
-    grid-area: mult;
-    background: #aaa69d;
-    color: white;
-    font-size: 17px;
-  }
+#mult{
+  grid-area: mult;
+  background: #aaa69d;
+  color: white;
+  font-size: 17px;
+}
   
-  #mult:hover{
-    background: #84817a;
-    color: white;
-  }
+#mult:hover{
+  background: #84817a;
+  color: white;
+}
   
-  #minus{
-    grid-area: minus;
-    background: #aaa69d;
-    color: white;
-    font-size: 17px;
-  }
+#minus{
+  grid-area: minus;
+  background: #aaa69d;
+  color: white;
+  font-size: 17px;
+}
   
-  #minus:hover{
-    background: #84817a;
-    color: white;
-  }
+#minus:hover{
+  background: #84817a;
+  color: white;
+}
   
-  #plus{
-    grid-area: plus;
-    background: #aaa69d;
-    color: white;
-    font-size: 17px;
-  }
+#plus{
+  grid-area: plus;
+  background: #aaa69d;
+  color: white;
+  font-size: 17px;
+}
   
-  #plus:hover{
-    background: #84817a;
-    color: white;
-  }
+#plus:hover{
+  background: #84817a;
+  color: white;
+}
   
-  #equal{
-    grid-area: equal;
-    font-size: 17px;
-  }
+#equal{
+  grid-area: equal;
+  font-size: 17px;
+}
   
-  #dot{
-    grid-area: dot;
-    background: #f1f2f6;
-    color: #57606f;
-    font-size: 17px;
-  }
+#dot{
+  grid-area: dot;
+  background: #f1f2f6;
+  color: #57606f;
+  font-size: 17px;
+}
 
-  #dot[disabled] {
+#dot[disabled] {
   border: 1px solid #ccc;
   background-color: f1f2f6;
   color: #57606f;
@@ -145,116 +142,116 @@ body{
 }
 
   
-  #dot:hover{
-    background: #dfe4ea;
-  }
+#dot:hover{
+  background: #dfe4ea;
+}
   
-  #zero{
-    grid-area: zero;
-    background: #f1f2f6;
-    color: #57606f;
-    font-size: 17px;
-  }
+#zero{
+  grid-area: zero;
+  background: #f1f2f6;
+  color: #57606f;
+  font-size: 17px;
+}
   
-  #zero:hover{
-    background: #dfe4ea;
-  }
+#zero:hover{
+  background: #dfe4ea;
+}
   
-  #one{
-    grid-area: one;
-    background: #f1f2f6;
-    color: #57606f;
-    font-size: 17px;
-  }
+#one{
+  grid-area: one;
+  background: #f1f2f6;
+  color: #57606f;
+  font-size: 17px;
+}
   
-  #one:hover{
-    background: #dfe4ea;
-  }
+#one:hover{
+  background: #dfe4ea;
+}
   
-  #two{
-    grid-area: two;
-    background: #f1f2f6;
-    color: #57606f;
-    font-size: 17px;
-  }
+#two{
+  grid-area: two;
+  background: #f1f2f6;
+  color: #57606f;
+  font-size: 17px;
+}
   
-  #two:hover{
-    background: #dfe4ea;
-  }
+#two:hover{
+  background: #dfe4ea;
+}
   
-  #three{
-    grid-area: three;
-    background: #f1f2f6;
-    color: #57606f;
-    font-size: 17px;
-  }
+#three{
+  grid-area: three;
+  background: #f1f2f6;
+  color: #57606f;
+  font-size: 17px;
+}
   
-  #three:hover{
-    background: #dfe4ea;
-  }
+#three:hover{
+  background: #dfe4ea;
+}
   
-  #four{
-    grid-area: four;
-    background: #f1f2f6;
-    color: #57606f;
-    font-size: 17px;
-  }
+#four{
+  grid-area: four;
+  background: #f1f2f6;
+  color: #57606f;
+  font-size: 17px;
+}
   
-  #four:hover{
-    background: #dfe4ea;
-  }
+#four:hover{
+  background: #dfe4ea;
+}
   
-  #five{
-    grid-area: five;
-    background: #f1f2f6;
-    color: #57606f;
-    font-size: 17px;
-  }
+#five{
+  grid-area: five;
+  background: #f1f2f6;
+  color: #57606f;
+  font-size: 17px;
+}
   
-  #five:hover{
-    background: #dfe4ea;
-  }
+#five:hover{
+  background: #dfe4ea;
+}
   
-  #six{
-    grid-area: six;
-    background: #f1f2f6;
-    color: #57606f;
-    font-size: 17px;
-  }
+#six{
+  grid-area: six;
+  background: #f1f2f6;
+  color: #57606f;
+  font-size: 17px;
+}
   
-  #six:hover{
-    background: #dfe4ea;
-  }
+#six:hover{
+  background: #dfe4ea;
+}
   
-  #seven{
-    grid-area: seven;
-    background: #f1f2f6;
-    color: #57606f;
-    font-size: 17px;
-  }
+#seven{
+  grid-area: seven;
+  background: #f1f2f6;
+  color: #57606f;
+  font-size: 17px;
+}
   
-  #seven:hover{
-    background: #dfe4ea;
-  }
+#seven:hover{
+  background: #dfe4ea;
+}
   
-  #eight{
-    grid-area: eight;
-    background: #f1f2f6;
-    color: #57606f;
-    font-size: 17px;
-  }
+#eight{
+  grid-area: eight;
+  background: #f1f2f6;
+  color: #57606f;
+  font-size: 17px;
+}
   
-  #eight:hover{
-    background: #dfe4ea;
-  }
+#eight:hover{
+  background: #dfe4ea;
+}
   
-  #nine{
-    grid-area: nine;
-    background: #f1f2f6;
-    color: #57606f;
-    font-size: 17px;
-  }
+#nine{
+  grid-area: nine;
+  background: #f1f2f6;
+  color: #57606f;
+  font-size: 17px;
+}
   
-  #nine:hover{
-    background: #dfe4ea;
-  }
+#nine:hover{
+  background: #dfe4ea;
+}

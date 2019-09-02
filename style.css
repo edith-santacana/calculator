@@ -135,6 +135,14 @@ body{
     color: #57606f;
     font-size: 17px;
   }
+
+  #dot[disabled] {
+  border: 1px solid #ccc;
+  background-color: f1f2f6;
+  color: #57606f;
+  opacity:100;
+}
+
   
   #dot:hover{
     background: #dfe4ea;

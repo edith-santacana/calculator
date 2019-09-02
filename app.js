@@ -80,9 +80,9 @@ function updateOutput (aOutput) {
         outputTextElement.innerText = (output !== null) ? output : '0';
     } else {
         if (output === null || output.indexOf('+') > -1 || output.indexOf('-') > -1 || output.indexOf('*') > -1 || output.indexOf('/') > -1){
-            output = aOutput.replace(/^0+/gm ,"");
+            output = aOutput;
         } else {
-            output = output + aOutput.replace(/^0+/gm ,"");
+            output = output + aOutput;
         }
         document.getElementById("dot").disabled = (output.indexOf('.') > -1);
         outputTextElement.innerText = (output !== null) ? output : '0';

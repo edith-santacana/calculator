@@ -11,7 +11,7 @@ let output = null;
 numberButtons.forEach(button => {
     button.addEventListener('click', (e) => {
         console.log(e.target.innerText);
-        if (formula.length < 20){
+        if (formula.length < 20) {
             updateOutput(e.target.innerText);
             updateFormula(e.target.innerText);
         } else {
@@ -52,34 +52,32 @@ function formulaIsValid(aFormula) {
 }
 
 function updateFormula(aOutput) {
-    if (aOutput === null){
+    if (aOutput === null) {
         formula = [];
         formulaTextElement.innerText = '';
         return;
     } 
     let testedFormula = [...formula];
     testedFormula.push(aOutput);
-    // let buffer = testedFormula.join('').replace(/^0+/gm ,"").replace(/[+\-\*\/](0+)/g, "");
     let buffer = testedFormula.join('').replace(/^0+/gm ,"").replace(/[\+](0+)/g, "+").replace(/[\-](0+)/g, "-").replace(/[\*](0+)/g, "*").replace(/[\/](0+)/g, "/");
     if (formulaIsValid(buffer)) {
         let temp = buffer.split('');
         formula = [...temp];
-        // formula = [...testedFormula];
         formulaTextElement.innerText = (buffer!== null) ?  buffer : '';
     }
 }
 
 function updateOutput (aOutput) {
-    if (aOutput === null){
+    if (aOutput === null) {
         output = null;
         outputTextElement.innerText = '0';
         return;
     }
-    if (aOutput === '+' || aOutput === '-' || aOutput === '*' || aOutput === '/'){
+    if (aOutput === '+' || aOutput === '-' || aOutput === '*' || aOutput === '/') {
         output = aOutput;
         outputTextElement.innerText = (output !== null) ? output : '0';
     } else {
-        if (output === null || output.indexOf('+') > -1 || output.indexOf('-') > -1 || output.indexOf('*') > -1 || output.indexOf('/') > -1){
+        if (output === null || output.indexOf('+') > -1 || output.indexOf('-') > -1 || output.indexOf('*') > -1 || output.indexOf('/') > -1) {
             output = aOutput;
         } else {
             output = output + aOutput;
@@ -89,7 +87,7 @@ function updateOutput (aOutput) {
     }
 }
 
-function compute(aFormula){
+function compute(aFormula) {
     let result = aFormula.join('');
     document.getElementById("dot").disabled = false;
     outputTextElement.innerText = (result) ? eval(result) : '0';

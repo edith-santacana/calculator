@@ -39,7 +39,6 @@ allClearButtons.addEventListener('click', (e) => {
     document.getElementById("dot").disabled = false;
     updateOutput(null);
     updateFormula(null);
-
 });
 
 function formulaIsValid(aFormula) {

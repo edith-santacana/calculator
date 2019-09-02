@@ -1,12 +1,12 @@
-html{
+html {
   height: 100%;
 }
 
-body{
+body {
   height: 100%;
 }
 
-.title{
+.title {
   font-family: monospace;
   font-size: 40px;
 }
@@ -39,7 +39,7 @@ body{
     "zero zero dot equal";
 }
   
-.display{
+.display {
   color: white;
   background: #34495e;
   text-align: right;
@@ -49,85 +49,85 @@ body{
   height: 65px;
 }
   
-#formula{
+#formula {
   grid-area: formula;
 }
   
-#output{
+#output {
   grid-area: output;
 }
   
-#AC{
+#AC {
   grid-area: AC;
   font-size: 17px;
 }
   
-#sign{
+#sign {
   grid-area: sign;
   background: #aaa69d;
   color: white;
   font-size: 17px;
 }
   
-#sign:hover{
+#sign:hover {
   background: #84817a;
   color: white;
 }
   
-#divide{
+#divide {
    grid-area: divide;
    background: #aaa69d;
    color: white;
    font-size: 17px;
 }
   
-#divide:hover{
+#divide:hover {
   background: #84817a;
   color: white;
 }
   
-#mult{
+#mult {
   grid-area: mult;
   background: #aaa69d;
   color: white;
   font-size: 17px;
 }
   
-#mult:hover{
+#mult:hover {
   background: #84817a;
   color: white;
 }
   
-#minus{
+#minus {
   grid-area: minus;
   background: #aaa69d;
   color: white;
   font-size: 17px;
 }
   
-#minus:hover{
+#minus:hover {
   background: #84817a;
   color: white;
 }
   
-#plus{
+#plus {
   grid-area: plus;
   background: #aaa69d;
   color: white;
   font-size: 17px;
 }
   
-#plus:hover{
+#plus:hover {
   background: #84817a;
   color: white;
 }
   
-#equal{
+#equal {
   grid-area: equal;
   font-size: 17px;
 }
   
-#dot{
+#dot {
   grid-area: dot;
   background: #f1f2f6;
   color: #57606f;
@@ -142,116 +142,116 @@ body{
 }
 
   
-#dot:hover{
+#dot:hover {
   background: #dfe4ea;
 }
   
-#zero{
+#zero {
   grid-area: zero;
   background: #f1f2f6;
   color: #57606f;
   font-size: 17px;
 }
   
-#zero:hover{
+#zero:hover {
   background: #dfe4ea;
 }
   
-#one{
+#one {
   grid-area: one;
   background: #f1f2f6;
   color: #57606f;
   font-size: 17px;
 }
   
-#one:hover{
+#one:hover {
   background: #dfe4ea;
 }
   
-#two{
+#two {
   grid-area: two;
   background: #f1f2f6;
   color: #57606f;
   font-size: 17px;
 }
   
-#two:hover{
+#two:hover {
   background: #dfe4ea;
 }
   
-#three{
+#three {
   grid-area: three;
   background: #f1f2f6;
   color: #57606f;
   font-size: 17px;
 }
   
-#three:hover{
+#three:hover {
   background: #dfe4ea;
 }
   
-#four{
+#four {
   grid-area: four;
   background: #f1f2f6;
   color: #57606f;
   font-size: 17px;
 }
   
-#four:hover{
+#four:hover {
   background: #dfe4ea;
 }
   
-#five{
+#five {
   grid-area: five;
   background: #f1f2f6;
   color: #57606f;
   font-size: 17px;
 }
   
-#five:hover{
+#five:hover {
   background: #dfe4ea;
 }
   
-#six{
+#six {
   grid-area: six;
   background: #f1f2f6;
   color: #57606f;
   font-size: 17px;
 }
   
-#six:hover{
+#six:hover {
   background: #dfe4ea;
 }
   
-#seven{
+#seven {
   grid-area: seven;
   background: #f1f2f6;
   color: #57606f;
   font-size: 17px;
 }
   
-#seven:hover{
+#seven:hover {
   background: #dfe4ea;
 }
   
-#eight{
+#eight {
   grid-area: eight;
   background: #f1f2f6;
   color: #57606f;
   font-size: 17px;
 }
   
-#eight:hover{
+#eight:hover {
   background: #dfe4ea;
 }
   
-#nine{
+#nine {
   grid-area: nine;
   background: #f1f2f6;
   color: #57606f;
   font-size: 17px;
 }
   
-#nine:hover{
+#nine:hover {
   background: #dfe4ea;
 }

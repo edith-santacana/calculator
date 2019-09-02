@@ -59,9 +59,12 @@ function updateFormula(aOutput) {
     } 
     let testedFormula = [...formula];
     testedFormula.push(aOutput);
-    let buffer = testedFormula.join('');
+    // let buffer = testedFormula.join('').replace(/^0+/gm ,"").replace(/[+\-\*\/](0+)/g, "");
+    let buffer = testedFormula.join('').replace(/^0+/gm ,"").replace(/[\+](0+)/g, "+").replace(/[\-](0+)/g, "-").replace(/[\*](0+)/g, "*").replace(/[\/](0+)/g, "/");
     if (formulaIsValid(buffer)) {
-        formula = [...testedFormula];
+        let temp = buffer.split('');
+        formula = [...temp];
+        // formula = [...testedFormula];
         formulaTextElement.innerText = (buffer!== null) ?  buffer : '';
     }
 }

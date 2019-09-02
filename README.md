@@ -1,7 +1,7 @@
 # Wildcard
 A basic calculator implemented in Javascript.
 
-<img src="calculator.gif" width="200">
+<img src="calculator.gif" width="300">
 
 ## User Interaction
 The program takes a string with an arithmetic expression as an argument, evaluates it and returns the result when the user clicks on the equal button.

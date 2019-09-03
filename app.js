@@ -6,7 +6,7 @@
 /*   By: esantaca <esantaca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/30 10:05:28 by edithsantac       #+#    #+#             */
-/*   Updated: 2019/09/03 14:09:48 by esantaca         ###   ########.fr       */
+/*   Updated: 2019/09/03 15:04:23 by esantaca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,5 +110,5 @@ function compute(aFormula) {
     if (result === "42") {
         window.open("https://www.42.us.org");
     }
-    outputTextElement.innerText = (result) ? eval(result) : '0';
+    outputTextElement.innerText = (result) ? eval(result).toFixed(3) : '0';
 }

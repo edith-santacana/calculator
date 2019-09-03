@@ -6,11 +6,18 @@
 /*   By: edithsantacana <edithsantacana@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/30 10:05:28 by edithsantac       #+#    #+#             */
-/*   Updated: 2019/09/02 17:11:23 by edithsantac      ###   ########.fr       */
+/*   Updated: 2019/09/02 17:34:14 by edithsantac      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* EXPLAIN WHAT THIS FILE DOES */
+/* This program lets the web page react intelligently and handles the logic.  */
+/* The user enters an arithmetic expression by clicking on the buttons, the   */
+/* program evaluates it and returns the result when the user clicks on the    */
+/* equal button.                                                              */
+/* If the expression string is not a valid arithmetic expression the formula  */
+/* is not updated and the user can  either:                                   */
+/*      - reset the formula by clicking on the _All Clear_ button,            */
+/*      - click on any other button to enter a valid expression.              */
 
 const numberButtons = document.querySelectorAll('[data-number]');
 const operationsButtons = document.querySelectorAll('[data-operation]');

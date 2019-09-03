@@ -6,7 +6,7 @@
 /*   By: edithsantacana <edithsantacana@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/30 10:05:28 by edithsantac       #+#    #+#             */
-/*   Updated: 2019/09/02 17:34:14 by edithsantac      ###   ########.fr       */
+/*   Updated: 2019/09/02 18:11:35 by edithsantac      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,5 +110,8 @@ function updateOutput (aOutput) {
 function compute(aFormula) {
     let result = aFormula.join('');
     document.getElementById("dot").disabled = false;
+    if (result === "42") {
+        window.open("https://www.42.us.org");
+    }
     outputTextElement.innerText = (result) ? eval(result) : '0';
 }

@@ -1,3 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   app.js                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: edithsantacana <edithsantacana@student.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/30 10:05:28 by edithsantac       #+#    #+#             */
+/*   Updated: 2019/09/02 17:11:23 by edithsantac      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/* EXPLAIN WHAT THIS FILE DOES */
+
 const numberButtons = document.querySelectorAll('[data-number]');
 const operationsButtons = document.querySelectorAll('[data-operation]');
 const equalsButtons = document.querySelector('[data-equal]');

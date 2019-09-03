@@ -6,7 +6,7 @@
 /*   By: esantaca <esantaca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/30 10:05:28 by edithsantac       #+#    #+#             */
-/*   Updated: 2019/09/03 14:02:35 by esantaca         ###   ########.fr       */
+/*   Updated: 2019/09/03 14:04:59 by esantaca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,6 @@ function updateFormula(aOutput) {
     if (formulaIsValid(buffer)) {
         let temp = buffer.split('');
         formula = [...temp];
-        // formulaTextElement.innerText = (buffer!== null) ?  buffer : '';
         formulaTextElement.innerText = buffer;
     }
 }
@@ -93,7 +92,6 @@ function updateOutput (aOutput) {
     }
     if (aOutput === '+' || aOutput === '-' || aOutput === '*' || aOutput === '/') {
         output = aOutput;
-        // outputTextElement.innerText = (output !== null) ? output : '0';
         outputTextElement.innerText = output;
     } else {
         if (output === null || output.indexOf('+') > -1 || output.indexOf('-') > -1 || output.indexOf('*') > -1 || output.indexOf('/') > -1) {
@@ -102,14 +100,12 @@ function updateOutput (aOutput) {
             output = output + aOutput;
         }
         document.getElementById("dot").disabled = (output.indexOf('.') > -1);
-        // outputTextElement.innerText = (output !== null) ? output : '0';
         outputTextElement.innerText = output;
     }
 }
 
 function compute(aFormula) {
     let result = aFormula.join('');
-    // document.getElementById("dot").disabled = false;
     document.getElementById("dot").disabled = (output.indexOf('.') > -1);
     if (result === "42") {
         window.open("https://www.42.us.org");

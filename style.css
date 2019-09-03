@@ -6,18 +6,14 @@
 /*   By: edithsantacana <edithsantacana@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/29 11:01:52 by edithsantac       #+#    #+#             */
-/*   Updated: 2019/09/02 19:09:51 by edithsantac      ###   ########.fr       */
+/*   Updated: 2019/09/02 19:23:31 by edithsantac      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* This file formats the web page content: enhances the website presentation  */
 
-html {
-  height: 100vw;
-}
-
 body {
-  height: 100vw;
+  height: 100em;
 }
 
 .page-title {

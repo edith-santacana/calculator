@@ -24,6 +24,8 @@ The program uses the same operator precedence and associativity as the javascrip
 |       /       |    Division    |
 |       **      | Raise to power |
 
+The result is rounded to 3 decimals digits.
+
 ## How to run and install the program
 
 1. Clone the GitHub repo.

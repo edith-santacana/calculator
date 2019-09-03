@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   app.js                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edithsantacana <edithsantacana@student.    +#+  +:+       +#+        */
+/*   By: esantaca <esantaca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/30 10:05:28 by edithsantac       #+#    #+#             */
-/*   Updated: 2019/09/02 18:11:35 by edithsantac      ###   ########.fr       */
+/*   Updated: 2019/09/03 13:08:03 by esantaca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ operationsButtons.forEach(button => {
     button.addEventListener('click', (e) => {
         updateOutput(e.target.getAttribute('value'));
         updateFormula(e.target.getAttribute('value'));
-
     })
 });
 

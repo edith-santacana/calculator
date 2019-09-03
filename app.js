@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   app.js                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edithsantacana <edithsantacana@student.    +#+  +:+       +#+        */
+/*   By: esantaca <esantaca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/30 10:05:28 by edithsantac       #+#    #+#             */
-/*   Updated: 2019/09/02 18:11:35 by edithsantac      ###   ########.fr       */
+/*   Updated: 2019/09/03 14:09:48 by esantaca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ let output = null;
 
 numberButtons.forEach(button => {
     button.addEventListener('click', (e) => {
-        console.log(e.target.innerText);
         if (formula.length < 20) {
             updateOutput(e.target.innerText);
             updateFormula(e.target.innerText);
@@ -47,7 +46,6 @@ operationsButtons.forEach(button => {
     button.addEventListener('click', (e) => {
         updateOutput(e.target.getAttribute('value'));
         updateFormula(e.target.getAttribute('value'));
-
     })
 });
 
@@ -56,7 +54,6 @@ equalsButtons.addEventListener('click', (e) => {
 });
 
 allClearButtons.addEventListener('click', (e) => {
-    console.log(e.target.innerText);
     document.getElementById("dot").disabled = false;
     updateOutput(null);
     updateFormula(null);
@@ -83,7 +80,7 @@ function updateFormula(aOutput) {
     if (formulaIsValid(buffer)) {
         let temp = buffer.split('');
         formula = [...temp];
-        formulaTextElement.innerText = (buffer!== null) ?  buffer : '';
+        formulaTextElement.innerText = buffer;
     }
 }
 
@@ -95,7 +92,7 @@ function updateOutput (aOutput) {
     }
     if (aOutput === '+' || aOutput === '-' || aOutput === '*' || aOutput === '/') {
         output = aOutput;
-        outputTextElement.innerText = (output !== null) ? output : '0';
+        outputTextElement.innerText = output;
     } else {
         if (output === null || output.indexOf('+') > -1 || output.indexOf('-') > -1 || output.indexOf('*') > -1 || output.indexOf('/') > -1) {
             output = aOutput;
@@ -103,13 +100,13 @@ function updateOutput (aOutput) {
             output = output + aOutput;
         }
         document.getElementById("dot").disabled = (output.indexOf('.') > -1);
-        outputTextElement.innerText = (output !== null) ? output : '0';
+        outputTextElement.innerText = output;
     }
 }
 
 function compute(aFormula) {
     let result = aFormula.join('');
-    document.getElementById("dot").disabled = false;
+    document.getElementById("dot").disabled = (output.indexOf('.') > -1);
     if (result === "42") {
         window.open("https://www.42.us.org");
     }

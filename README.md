@@ -1,4 +1,5 @@
 # Wildcard
+
 A basic calculator implemented in Javascript.
 
 <img src="calculator.gif" width="300">

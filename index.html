@@ -1,20 +1,31 @@
+<!----------------------------------------------------------------------------->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- index.html                                         :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: edithsantacana <edithsantacana@student.    +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2019/08/29 10:30:32 by edithsantac       #+#    #+#            -->
+<!-- Updated: 2019/09/02 17:05:31 by edithsantac      ###   ########.fr      -->
+<!--                                                                         -->
+<!----------------------------------------------------------------------------->
+
+<!----- HTML elements (Building blocks) describing the web app structure  ----->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" , initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculatotor</title>
-
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
         integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
-
     <link href="style.css" rel="stylesheet">
     <script src="app.js" defer></script>
     
@@ -23,43 +34,44 @@
 <body>
 
     <div class="container-fluid app-container">
-        <h3 class="text-center title">Calculator</h3>
+        <h3 class="text-center page-title">Calculator</h3>
         <div class="row align-items-center">
 
-            <div class="col-md-4" id="left-margin">
+            <div class="col-md-4">
             </div>
 
-            <div class="col-md-4" id="calculator">
-                <div id="calculator-visualisation">
-                    <div class="calculator-container" id="background-calculator">
+            <div class="col-md-4">
+                <div>
+                    <div class="calculator-container">
                         <div data-formula class="display" id="formula">Hello Toto</div>
                         <div data-output class="display" id="output"></div>
-                        <button data-number class="btn btn-default target" id="zero">0</button>
-                        <button data-number class="btn btn-default target" id="one">1</button>
-                        <button data-number class="btn btn-default target" id="two">2</button>
-                        <button data-number class="btn btn-default target" id="three">3</button>
-                        <button data-number class="btn btn-default target" id="four">4</button>
-                        <button data-number class="btn btn-default target" id="five">5</button>
-                        <button data-number class="btn btn-default target" id="six">6</button>
-                        <button data-number class="btn btn-default target" id="seven">7</button>
-                        <button data-number class="btn btn-default target" id="eight">8</button>
-                        <button data-number class="btn btn-default target" id="nine">9</button>
-                        <button data-equal class="btn btn-danger target" id="equal">=</button>
-                        <button data-operation value="+" class="btn btn-default target" id="plus">+</button>
-                        <button data-number class="btn btn-default target" id="dot">.</button>
-                        <button data-operation value="-" class="btn btn-default target" id="minus">-</button>
-                        <button data-operation value="*" class="btn btn-default target" id="mult">x</button>
-                        <button data-operation value="/" class="btn btn-default target" id="divide">/</button>
-                        <button data-all-clear class="btn btn-primary target" id="AC">AC</button>
+                        <button data-number class="btn btn-default" id="zero">0</button>
+                        <button data-number class="btn btn-default" id="one">1</button>
+                        <button data-number class="btn btn-default" id="two">2</button>
+                        <button data-number class="btn btn-default" id="three">3</button>
+                        <button data-number class="btn btn-default" id="four">4</button>
+                        <button data-number class="btn btn-default" id="five">5</button>
+                        <button data-number class="btn btn-default" id="six">6</button>
+                        <button data-number class="btn btn-default" id="seven">7</button>
+                        <button data-number class="btn btn-default" id="eight">8</button>
+                        <button data-number class="btn btn-default" id="nine">9</button>
+                        <button data-equal class="btn btn-danger" id="equal">=</button>
+                        <button data-operation value="+" class="btn btn-default" id="plus">+</button>
+                        <button data-number class="btn btn-default" id="dot">.</button>
+                        <button data-operation value="-" class="btn btn-default" id="minus">-</button>
+                        <button data-operation value="*" class="btn btn-default" id="mult">x</button>
+                        <button data-operation value="/" class="btn btn-default" id="divide">/</button>
+                        <button data-all-clear class="btn btn-primary" id="AC">AC</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4" id="right-margin">
+            <div class="col-md-4">
             </div>
 
         </div>
     </div>
+
 </body>
 
 </html>

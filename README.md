@@ -1,4 +1,4 @@
-# Wildcard
+# Calculator
 
 A basic calculator implemented in Javascript.
 
